@@ -1,0 +1,249 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	width: 100%;
+	height: 100vh;
+	padding-top: 100px;
+	background-color: #f4f6efd9;
+}
+
+form{
+	margin: 15px auto;
+	padding: 10px;
+	max-width: 1000px;
+	min-width: 365px;
+	width: 100%;
+	background-color: #0e1640;
+	border-radius: 10px;
+    box-shadow: 0 0 3px black;    	
+}
+
+fieldset{		    
+    background-color: white;
+    margin-top: 10px;	
+}
+
+legend{
+	padding:0 10px;
+	border: solid 1px black;
+	border-radius: 3px;
+	background-color: #3a7b24;
+	color: white;
+	font-weight: bold;	
+}
+
+input[type="button"]{
+	padding: 5px 10px;
+	margin: 10px;
+	font-size: 15px;
+	border-radius: 8px;
+	font-weight: bold;
+	outline: none;
+}
+
+input[class="info"]{	
+	font-size:1.3vw;
+	padding: 5px 15px;	
+	border:none;
+	background: rgba(255,255,255,0);
+	border-bottom: solid 2px black;	
+	margin: 0 5px;
+	width: 40%;	
+}
+
+#d_pers input[class="info"],
+#d_pers .correcto,
+#d_pers .error,
+#aficiones input[class="info"],
+#aficiones .correcto,
+#aficiones .error,
+#enlaces input[class="info"],
+#enlaces .correcto,
+#enlaces .error
+{
+	min-width: 250px;
+}
+
+.correcto{
+	font-size:1.3vw;
+	padding: 5px 15px;	
+	border:none;
+	background: rgba(255,255,255,0);
+	margin: 0 5px;
+	outline: none;
+	width: 40%;
+	border-bottom:solid 2px #1cad1c;
+}
+
+.error{
+	font-size:1.3vw;
+	padding: 5px 15px;	
+	border:none;
+	background: rgba(255,255,255,0);
+	margin: 0 5px;
+	outline: none;
+	width: 40%;
+	border-bottom:solid 3px red;
+}
+
+label{
+	font-size: 1.6vw;
+	display: inline-block;
+	width: 15%;	
+	margin: 0 0 15px;
+}
+
+label.numeros{
+	width:18px;
+	text-align:right;
+}
+
+.años{
+	text-align:left;
+	width:5vw;
+	min-width:50px;
+	padding: 5px 2px;
+}
+
+.msnError,
+.msnError1{
+	color: red;
+	font-size: 12px;
+}
+
+#experiencia ul li label,
+#idiomas ul li label{
+	width: 20vw;
+	text-align: center;
+	margin: 0 3px;
+}
+
+#experiencia ul li input.info,
+#idiomas ul li input.info{
+	width: 20vw;
+	margin: 0 3px;	
+}
+
+select{	
+	background:rgba(255,255,255,0);
+	border:none;
+	border-bottom: solid 2px black;
+	font-size: 1.2vw;
+	padding: 5px 15px;
+	outline: none;
+	width: 18vw;
+    max-width: 105px;
+}
+
+ul{
+	list-style-type: none;
+	margin: 10px;
+	padding: 0;	
+}
+
+li{
+	padding: 0 10px;
+	margin: 10px 5px 29px 0;	
+}
+
+h1{text-align: center;}
+
+/*========================= Hover ==================================*/
+
+input[type="button"]:hover{
+	background: black;
+	color: white;
+}
+
+input[class="info"]:hover,
+.nivel:hover,
+.correcto:hover,
+.error:hover{
+	border-bottom: solid 3px #dbde0b;
+}
+
+input[class="info"]:focus{	
+	outline: none;
+	border-bottom:solid 3px red;
+}
+
+input:disabled{
+	background-color: rgba(255,255,255,0);
+}
+
+/*========================== Media Query =========================*/
+/***************************************************************** */
+
+@media all and (max-width: 1024px)
+{
+	label,input[class="info"],
+	select,
+	option,
+	legend{
+		font-size: 17px;
+	}
+
+	#d_pers label{
+		width: 20%;
+		display: block;
+	    margin-bottom: 0;
+	    margin-top: 10px;	
+	}
+
+	select{width: 28%;}
+
+	#d_pers input[class="info"]{
+		width: 45%;		
+		padding: 5px 15px;
+	}		
+}
+
+@media all and (max-width: 768px)
+{
+	body{padding: 20px 0 ;}
+
+	label,input[class="info"],select,option,legend,.correcto,.error{font-size: 15px;}	
+
+	input[type="button"]{font-size: 12px;}
+
+	#experiencia ul li label,
+	#idiomas ul li label{width: 38%;}
+
+	#experiencia ul li input.info,
+	#idiomas ul li input.info{width: 38%;}
+
+	ul{margin: 2px;}
+
+	li{margin: 3px 3px 3px 0;}	
+}
+
+@media all and (max-width: 480px)
+{
+	label,input[class="info"],
+	select,
+	option,
+	legend{font-size: 12px;}
+	
+	label{				
+		display: inline-block;
+	}
+
+	#d_pers label{
+		min-width: 80px;
+	}
+
+	select{
+		min-width: 100px;
+		padding: 5px;
+	}
+
+	h1{font-size: 20px;}
+
+	.msnError{
+		display: block;
+		text-align: right;
+	}	
+}

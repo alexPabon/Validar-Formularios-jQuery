@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Ejemplo Validar Formulario</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">		
+		<link rel="stylesheet" type="text/css" href="css/index.css">
+		<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+		<script type="text/javascript" src="js/funciones.js"></script>		
+		<script type="text/javascript" src="js/index.js"></script>				
+		
+	</head>
+	<body>
+		<input type="button" value="Crear tu corriculum" id="crear">
+		<div id="caja_gral">
+			<h1>CURRICULUM VITAE</h1>
+			<form>
+				<fieldset id="d_pers">
+					<legend>Datos personales</legend>
+					<ul>
+						<li>
+							<label for="nombre">Nombre:</label>
+							<input type="text" class="info" id="nombre" name="" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="apellido1">1º Apellido:</label>
+							<input type="text" class="info" id="apellido1" name="apellido1" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="apellido2">2º Apellido:</label>
+							<input type="text" class="info" id="apellido2" name="apellido2" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="dni">DNI:</label>
+							<input type="text" class="info" id="dni" name="dni" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="direc">Direccion:</label>
+							<input type="text" class="info" id="direc" name="direc" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="tel">Telefono:</label>
+							<input type="text" class="info" id="tel" name="tel" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="fechaNac">Fecha Nac:</label>
+							<input type="Date" class="info" id="fechaNac" name="fechaNac" disabled>
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<label for="estado">Estado civil:</label>
+							<select class="info" id="estado" name="estado" disabled style="min-width: 120px;">
+								<option value="">---</option>
+								<option value="soltero">Soltero</option>
+								<option value="casado">Casado</option>		
+							</select>														
+							<span class="msnError"></span>
+						</li>
+						<li>
+							<input type="button" id="editar" value="Modificar datos">
+						</li>					
+					</ul>
+				</fieldset>						
+				<fieldset id="experiencia">
+					<legend>Experiencia</legend>
+					<input type="button" value="Experiencia" id="exp">				
+				</fieldset>						
+				<fieldset id="idiomas">
+					<legend>Idiomas</legend>
+					<input type="button" value="Idiomas">
+				</fieldset>						
+				<fieldset id="aficiones">
+					<legend>Aficiones</legend>
+					<input type="button" value="Aficiones">
+				</fieldset>						
+				<fieldset id="enlaces">
+					<legend>Páginas de interés</legend>
+					<input type="button" value="Enlaces">
+				</fieldset>							
+				<input type="button" id="confirmar" value="Confirmar datos">
+			</form>
+		</div>	
+	</body>
+</html>
