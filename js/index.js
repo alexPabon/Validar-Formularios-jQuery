@@ -196,7 +196,7 @@ $(document).ready(function()
 		// ============================== Validar campos =========================================
 		//========================================================================================
 
-		//Confirmar el contenido que se ha escrito.
+		//Confirmar el contenido que se ha escrito en todas las entradas.
 		if($(this).attr("id")=="confirmar")
 		{
 			lbl1 = $("#d_pers label")
